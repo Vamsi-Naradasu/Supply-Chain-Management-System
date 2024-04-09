@@ -1,60 +1,16 @@
 /* Home.css */
 
-/* body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    color: #333;
-    text-align: center;
-  }
-  
-  nav {
-    margin-top: 20px;
-  }
-  
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    justify-content: center;
-  }
-  
-  .nav-item {
-    margin: 0 10px;
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    background-color: #f2f2f2;
-  }
-   */
 
-   /* Home.css */
+.home-container {
+  background-image: url(../../img/sms4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  }
 
 body {
   font-family: 'Arial', sans-serif;
+  
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
@@ -70,7 +26,7 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -83,24 +39,26 @@ nav {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column; /* Change to column */
+  align-items: center;
 }
 
+
 .nav-item {
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px;
+  /* Space between icon and text */
 }
 
 .nav-link:hover {
@@ -112,7 +70,8 @@ nav {
 .icon {
   width: 20px;
   height: 20px;
-  fill: currentColor; /* Makes the icon color match the text color */
+  fill: currentColor;
+  /* Makes the icon color match the text color */
 }
 
 .home-container {
@@ -125,7 +84,7 @@ nav {
 
 h1 {
   margin-bottom: 40px;
-  color: #333;
+  color: #ffffff;
   font-size: 2rem;
 }
 
@@ -137,35 +96,28 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* .gallery-img {
-  max-width: calc(50% - 10px);
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-} */
 
 .gallery-img:hover {
   transform: scale(1.05);
 }
 
 .gallery-img {
-  max-width: 25%; /* Adjust the width as needed */
-  height: auto; /* Maintain the aspect ratio */
-  margin-bottom: 20px; /* Add some space below each image */
-  border-radius: 8px; /* Optional: if you want rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: if you want a shadow for depth */
+  max-width: 25%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 @media (max-width: 768px) {
   .gallery-img {
-    max-width: 50%; /* Adjust the width for smaller screens */
-  }
+    max-width: 50%;
+    }
 }
 
 @media (max-width: 480px) {
   .gallery-img {
-    max-width: 100%; /* Full width on very small screens */
-  }
+    max-width: 100%;
+    }
 }

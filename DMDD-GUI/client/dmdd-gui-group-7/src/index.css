@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  /* background-color: #45a049; */
 }
 
 input {
@@ -109,4 +109,31 @@ form {
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  /* Add any other styling such as padding, border, etc. */
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.blue-button {
+  background-color: rgb(58, 90, 234);
+  color: white;
+  /* Add any other styling such as padding, border, etc. */
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.amber-button {
+  background-color: rgb(255, 89, 0);
+  color: white;
+  /* Add any other styling such as padding, border, etc. */
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
 }

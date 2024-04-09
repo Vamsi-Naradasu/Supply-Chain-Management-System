@@ -9,62 +9,63 @@ import sms3 from '../../img/sms3.jpg';
 import sms4 from '../../img/sms4.jpg';
 function Home() {
   return (
-    <div>
+    <div className="home-container"> 
       <h1>Supply Chain Management System <br></br><br></br></h1>
       <nav>
         <ul className="nav-list">
           <li className="nav-item">
-            <Link to="/products" className="nav-link">Products</Link>
+            <Link to="/departments" className="nav-link">Departments</Link>
+          </li>
+          {/* <li className="nav-item">
+            <Link to="/deptEmployee" className="nav-link">Department Employee</Link>
+          </li> */}
+          <li className="nav-item">
+            <Link to="/employee" className="nav-link">Employee</Link>
           </li>
           <li className="nav-item">
-            <Link to="/customers" className="nav-link">Customer</Link>
+            <Link to="/invoice" className="nav-link">Invoice</Link>
           </li>
           <li className="nav-item">
-            <Link to="/inquiry" className="nav-link">Inquiry</Link>
+            <Link to="/product" className="nav-link">Product</Link>
           </li>
           <li className="nav-item">
-            <Link to="/order" className="nav-link">Order</Link>
+            <Link to="/vendor" className="nav-link">Vendor</Link>
+          </li>
+          {/* <li className="nav-item">
+            <Link to="/productionEmp" className="nav-link">Production Employee</Link>
           </li>
           <li className="nav-item">
-            <Link to="/order_Item" className="nav-link">Order Item</Link>
+            <Link to="/productionLine" className="nav-link">Production Line</Link>
           </li>
           <li className="nav-item">
-            <Link to="/product_catalog" className="nav-link">Product Catalog</Link>
+            <Link to="/productLine" className="nav-link">Product Line</Link>
           </li>
           <li className="nav-item">
-            <Link to="/retailer" className="nav-link">Retailer</Link>
+            <Link to="/productMaterial" className="nav-link">Product Material</Link>
           </li>
           <li className="nav-item">
-            <Link to="/return_request" className="nav-link">Return Request</Link>
+            <Link to="/rawMaterial" className="nav-link">Raw Material</Link>
           </li>
           <li className="nav-item">
-            <Link to="/review" className="nav-link">Review</Link>
+            <Link to="/supplySchedule" className="nav-link">Supply Schedule</Link>
           </li>
           <li className="nav-item">
-            <Link to="/shipment" className="nav-link">Shipment</Link>
-          </li>
+            <Link to="/warehouse" className="nav-link">Warehouse</Link>
+          </li> 
           <li className="nav-item">
-            <Link to="/shipment_address" className="nav-link">Shipment Address</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/stock" className="nav-link">Stock</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/stock" className="nav-link">Stock</Link>
-          </li> <li className="nav-item">
-            <Link to="/stock" className="nav-link">Stock</Link>
-          </li>
+            <Link to="/warehouseEmp" className="nav-link">Warehouse Employee</Link>
+          </li> */}
         </ul>
       </nav>
       <br></br>
-      <div className="image-gallery">
+      {/* <div className="image-gallery">
         <img src={sms1} alt="Office Work" className="gallery-img" />
         <img src={sms3} alt="Production Line" className="gallery-img" />
         <img src={sms4} alt="Stored Boxes" className="gallery-img" />
         <img src={sms1} alt="Office Work" className="gallery-img" />
         <img src={sms3} alt="Production Line" className="gallery-img" />
         <img src={sms4} alt="Stored Boxes" className="gallery-img" />
-      </div>
+      </div> */}
     </div>
     
   );
